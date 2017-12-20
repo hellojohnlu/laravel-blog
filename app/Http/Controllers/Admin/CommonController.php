@@ -8,8 +8,5 @@ use App\Http\Controllers\Controller;
 
 class CommonController extends Controller
 {
-    public function login()
-    {
-        return view('admin.login');
-    }
+
 }
