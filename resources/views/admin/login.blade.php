@@ -10,8 +10,11 @@
 		<h1>Blog</h1>
 		<h2>欢迎使用博客管理平台</h2>
 		<div class="form">
-			<p style="color:red">用户名错误</p>
-			<form action="#" method="post">
+			@if(session('msg'))
+				<p style="color:red;">{{ session('msg') }}</p>
+			@endif
+			<form action="" method="post">
+				{{ csrf_field() }}
 				<ul>
 					<li>
 					<input type="text" name="username" class="text"/>
@@ -31,7 +34,6 @@
 					</li>
 				</ul>
 			</form>
-			<p><a href="#">返回首页</a> &copy; 2016 Powered by <a href="http://www.houdunwang.com" target="_blank">http://www.houdunwang.com</a></p>
 		</div>
 	</div>
 </body>

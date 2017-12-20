@@ -14,9 +14,19 @@ class LoginController extends CommonController
     /**
      * 后台登录界面
      */
-    public function login()
+    public function login(Request $request)
     {
-        return view('admin.login');
+        if ($request->isMethod('post')) {
+            //获取表单数据
+            $input = $request->all();
+
+            // 校验验证码
+            if ($input['code'] !== $this->getCode()) {
+                return back()->with('msg','验证码错误'); //返回session提示信息
+            }
+        }else{
+            return view('admin.login');
+        }
     }
 
 
@@ -36,9 +46,15 @@ class LoginController extends CommonController
 
         \Session::set('phrase',$builder->getPhrase());    //存储验证码到session
 
-        header('Cahce-Control:no-cache,must-revalidate');    //设置/浏览器不缓存
+        header('Cache-Control:no-cache,must-revalidate');    //设置/浏览器不缓存
 
         //输出验证码
         return response($builder->output())->header('Content-type','image/jpeg');
     }
+
+    private function getCode(){
+        return session('phrase');
+    }
 }
+
+

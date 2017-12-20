@@ -15,8 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['middleware'=>['web']], function () {
-    Route::get('admin/login','Admin\LoginController@login');    //后台登录
+Route::group([''], function () {
+    Route::match(['get', 'post'],'admin/login','Admin\LoginController@login');    //后台登录
     Route::get('admin/code','Admin\LoginController@code');      //验证码
-    Route::get('admin/getcode', 'Admin\LoginController@getCode');
 });
