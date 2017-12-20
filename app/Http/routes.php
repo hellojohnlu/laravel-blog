@@ -18,4 +18,6 @@ Route::get('/', function () {
 Route::group([''], function () {
     Route::match(['get', 'post'],'admin/login','Admin\LoginController@login');    //后台登录
     Route::get('admin/code','Admin\LoginController@code');      //验证码
+
+    Route::get('admin/index','Admin\IndexController@index');
 });

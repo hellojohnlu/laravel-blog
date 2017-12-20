@@ -1,17 +1,16 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Illuminate\Support\Facades\DB;
 
-class IndexController extends Controller
+class IndexController extends CommonController
 {
     public function index()
     {
-        $pdo = DB::connection()->getPdo();
-        dd($pdo);
+        return '后台首页';
     }
 }
