@@ -33,7 +33,7 @@ class LoginController extends CommonController
                 return back()->with('msg','用户名或密码错误');
             }
 
-            session(['user'=>$user['username']]);  // 如果登录成功，存入 session
+            session(['user'=>$user['username']]);  // 如果登录成功，存入session
 
             return redirect('admin/index'); // 跳转到后台首页
         }else{
@@ -41,6 +41,14 @@ class LoginController extends CommonController
         }
     }
 
+    /**
+     * 退出登录
+     */
+    public function quit()
+    {
+        \Session::set('user',null);
+        return redirect('admin/login');
+    }
 
     /**
      * 验证码类
@@ -64,12 +72,11 @@ class LoginController extends CommonController
         return response($builder->output())->header('Content-type','image/jpeg');
     }
 
+    /**
+     * 获取验证码方法
+     * @return mixed
+     */
     private function getCode(){
         return session('phrase');
-    }
-
-    public function crypt()
-    {
-
     }
 }

@@ -18,7 +18,10 @@ Route::get('/', function () {
 Route::group([''], function () {
     Route::match(['get', 'post'],'admin/login','Admin\LoginController@login');    //后台登录
     Route::get('admin/code','Admin\LoginController@code');      //验证码
+});
 
-    Route::get('admin/index','Admin\IndexController@index');    //后台首页
-    Route::get('admin/info','Admin\IndexController@info');    //后台首页
+Route::group(['middleware'=>['admin.login'],'prefix'=>'admin','namespace'=>'Admin'], function () {
+    Route::get('index','IndexController@index');    //后台首页
+    Route::get('info','IndexController@info');      //后台首页主体内容
+    Route::get('quit','LoginController@quit');      //退出登录
 });
