@@ -15,9 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group([''], function () {
-    Route::match(['get', 'post'],'admin/login','Admin\LoginController@login');    //后台登录
-    Route::get('admin/code','Admin\LoginController@code');      //验证码
+Route::group(['prefix'=>'admin','namespace'=>'Admin'], function () {
+    Route::match(['get', 'post'],'login','LoginController@login');    //后台登录
+    Route::get('code','LoginController@code');      //验证码
 });
 
 Route::group(['middleware'=>['admin.login'],'prefix'=>'admin','namespace'=>'Admin'], function () {
@@ -26,5 +26,7 @@ Route::group(['middleware'=>['admin.login'],'prefix'=>'admin','namespace'=>'Admi
     Route::get('quit','LoginController@quit');      //退出登录
     Route::match(['get','post'],'editpass','IndexController@editPassword'); //修改密码
     Route::get('jump','CommonController@jump');     //页面跳转
+
+    Route::resource('category','CategoryController');   //文章栏目资源路由
 });
 
