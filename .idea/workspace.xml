@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9f277c6d-1b4b-45db-87cd-64bfcaf8b0d1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CommonController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CommonController.php" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" />
       <change beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/pass.html" afterPath="$PROJECT_DIR$/resources/views/admin/pass.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,9 +22,21 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="26" column="68" lean-forward="false" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+            <state relative-caret-position="432">
+              <caret line="27" column="58" lean-forward="false" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CommonController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+              <folding>
+                <element signature="e#46#74#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -33,8 +44,8 @@
       <file leaf-file-name="IndexController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="739">
-              <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+            <state relative-caret-position="744">
+              <caret line="75" column="9" lean-forward="true" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
               <folding>
                 <element signature="e#46#70#0#PHP" expanded="true" />
               </folding>
@@ -42,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pass.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pass.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/pass.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+            <state relative-caret-position="528">
+              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
               <folding>
                 <element signature="e#521#540#0#HTML" expanded="true" />
                 <element signature="e#635#654#0#HTML" expanded="true" />
@@ -69,7 +80,7 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/admin/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="120">
               <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
               <folding>
                 <marker date="1513828688984" expanded="true" signature="9:23" ph="..." />
@@ -86,6 +97,11 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>@charset &quot;utf-8&quot;;*{margin:0;padding:0;list-style:none}img{border:0}html,body{width:100%;height:100%}body{background:#fff;color:#333;font-size:14px;font-family:&quot;Microsoft Yahei&quot;,'Simsun',&quot;Lucida Grande&quot;,Verdana,Lucida,Helvetica,Arial,sans-serif}a{color:#428bca;text-decoration:none;cursor:pointer;outline:0}a:hover{color:#1963aa;text-decoration:underline}p{line-height:20px;margin-bottom:5px}.red{color:red;}.blue{color:blue;}textarea,input[type=&quot;text&quot;],input[type=&quot;password&quot;],input[type=&quot;datetime&quot;],input[type=&quot;datetime-local&quot;],input[type=&quot;date&quot;],input[type=&quot;month&quot;],input[type=&quot;time&quot;],input[type=&quot;week&quot;],input[type=&quot;number&quot;],input[type=&quot;email&quot;],input[type=&quot;url&quot;],input[type=&quot;search&quot;],input[type=&quot;tel&quot;],input[type=&quot;color&quot;],.uneditable-input{background-color:#fff;border:1px solid #ccc;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);-webkit-transition:border linear .2s,box-shadow linear .2s;-moz-transition:border linear .2s,box-shadow linear .2s;-o-transition:border linear .2s,box-shadow linear .2s;transition:border linear .2s,box-shadow linear .2s;border-radius:3px}textarea:focus,input[type=&quot;text&quot;]:focus,input[type=&quot;password&quot;]:focus,input[type=&quot;datetime&quot;]:focus,input[type=&quot;datetime-local&quot;]:focus,input[type=&quot;date&quot;]:focus,input[type=&quot;month&quot;]:focus,input[type=&quot;time&quot;]:focus,input[type=&quot;week&quot;]:focus,input[type=&quot;number&quot;]:focus,input[type=&quot;email&quot;]:focus,input[type=&quot;url&quot;]:focus,input[type=&quot;search&quot;]:focus,input[type=&quot;tel&quot;]:focus,input[type=&quot;color&quot;]:focus,.uneditable-input:focus{border-color:rgba(82,168,236,0.8);outline:0;outline:thin dotted \9;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6)}input[type='text'],input[type='password']{width:350;margin-right:5px;padding:6px 5px;line-height:12px;font-size:12px}input[type='text'].sm{width:80px}input[type='text'].md,input[type='password'].md{width:250px}input[type='text'].lg{width:580px}textarea{width:580px;height:55px;padding:6px 5px;display:block;margin:10px 0}textarea.lg{width:580px;height:100px}label{margin-right:15px;vertical-align:middle;font-family:tahoma}input[type='radio']{margin-right:5px;vertical-align:middle;margin-top:-2px;margin-bottom:1px}input[type='checkbox']{margin-right:5px;vertical-align:middle;margin-top:-2px;margin-bottom:1px}select{font-size:12px;border-collapse:collapse;padding:0 5px;height:25px;line-height:25px}select option{padding:3px 5px;font-size:12px;vertical-align:middle}input[type='submit'],input[type='button']{padding:0 25px;height:25px;vertical-align:middle;margin-right:10px;color:#fff;letter-spacing:2px;border-radius:3px;background:#337ab7;border:1px solid #286090;cursor:pointer}input[type='submit']:hover,input[type='button']:hover{background:#286090}input[type='button'].back{background:#f0f0f0;color:#666;border:1px solid #ccc;border-collapse:collapse}input[type='button'].back:hover{background:#e6e6e6}.clear{clear:both}.red{color:#d9534f}.blue{color:#337ab7}.yellow{color:#ec971f}.left{float:left}.right{float:right}.login_box h1{text-align:center;color:#e6e6e6;font-size:120px;margin:50px 0 10px 0;font-weight:normal}.login_box h2{text-align:center;color:#333;font-size:20px;margin-bottom:20px;font-weight:normal}.login_box .form{width:240px;margin:0 auto}.login_box .form ul li{list-style-type:none;margin-bottom:10px;position:relative}.login_box .form ul li input.text{width:228px;height:23px;color:#555;padding:5px;border:1px solid #ccc;border-radius:3px;text-indent:38px}.login_box .form ul li input[type='submit']{font-family:&quot;微软雅黑&quot;;width:240px;height:33px;border-radius:3px;color:#fff;background:#337ab7;border:1px solid #2e6da4}.login_box .form ul li input[type='submit']:hover{background:#286090}.login_box .form ul li input.code{width:120px;height:23px;color:#555;padding:5px;border:1px solid #ccc;border-radius:3px;text-indent:38px}.login_box .form ul li span{background:#eee;height:33px;width:33px;text-align:center;line-height:33px;border-right:1px solid #ccc;border-radius:3px 0 0 3px;position:absolute;left:1px;top:1px}.login_box .form ul li img{width:100px;height:33px;float:right;border:1px solid #ccc}.login_box .form p{font-size:12px;line-height:30px;color:#333;text-align:center}.login_box .form p a{line-height:30px;color:#ff9a00}.top_box{height:50px;line-height:50px;width:100%;background:#222;position:fixed;top:0;left:0;font-size:14px;color:#9d9d9d}.top_box a{text-decoration:none}.top_box .top_left{float:left}.top_box .top_left .logo{float:left;width:190px;text-align:center;font-size:18px;font-weight:bold}.top_box .top_left .logo:hover{color:#fff}.top_box .top_left ul{float:left}.top_box .top_left ul li{float:left}.top_box .top_left ul li a{float:left;padding:0 25px;color:#9d9d9d;text-shadow:1px 1px 1px #000}.top_box .top_left ul li a:hover{background:#343434;color:#fff}.top_box .top_left ul li a.active{color:#fff;text-shadow:1px 1px 1px #003;background:#080808}.top_box .top_right{float:right}.top_box .top_right ul li{float:left;color:#fff;margin-right:20px}.top_box .top_right ul li a{float:left;margin-left:5px;display:inline;color:#9d9d9d;zoom:1}.top_box .top_right ul li a:hover{color:#fff}.menu_box{position:fixed;top:50px;left:0;bottom:0;overflow:scroll;overflow-x:hidden;width:189px;background:#f2f2f2;border-right:1px solid #ccc;z-index:10}.menu_box ul{font-size:14px}.menu_box ul li{border:1px solid #e5e5e5;border-width:1px 0}.menu_box ul li h3{font-size:14px;padding:0 16px 0 18px;display:block;height:38px;line-height:38px;color:#333;cursor:pointer}.menu_box ul li i{margin-right:5px;color:#666;font-size:14px}.menu_box ul li ul.sub_menu{border-top:1px solid #e5e5e5;background:#fff;display:none}.menu_box ul li ul.sub_menu li{padding-left:10px}.menu_box ul li ul.sub_menu li a{padding:0 16px 0 20px;display:block;height:38px;line-height:38px;color:#333;text-decoration:none}.menu_box ul li ul.sub_menu li a:hover{color:#1963aa}.menu_box ul li ul.sub_menu li a:hover i{color:#1963aa}.menu_box ul li ul.sub_menu li.on{color:#1963aa}.menu_box ul li ul.sub_menu li.on a{color:#1963aa}.menu_box ul li ul.sub_menu li.on a i{color:#1963aa}.main_box{position:fixed;left:190px;right:0;top:50px;bottom:35px}.bottom_box{width:100%;height:35px;line-height:35px;font-size:12px;text-indent:200px;background:#f2f2f2;border-top:1px solid #ccc;position:fixed;left:0;bottom:0}.bottom_box a{color:#1963aa}.crumb_warp{height:40px;line-height:39px;text-indent:5px;border-bottom:1px solid #e5e5e5;background:#f5f5f5}.crumb_warp i{font-size:18px}.result_wrap{padding:10px 20px;border-bottom:1px solid #e5e5e5}.result_wrap i{margin-right:5px}.result_title{line-height:35px;padding-bottom:5px;overflow:hidden}.result_title h3{font-size:14px}.result_title .mark{padding:5px 10px;border:1px dashed #e5e5e5;background:#fcf8e3;border-radius:3px;margin-bottom:3px}.result_title .mark p{padding:0;margin:0;line-height:22px;font-size:12px;color:#666}.result_content .short_wrap a{margin-right:20px}.result_content ul li{line-height:35px;border-bottom:1px dashed #eaeaea}.result_content ul li label{color:#909090;display:inline-block;width:150px;padding-right:10px;text-align:right}.result_content ul li span{font-size:15px}.result_content ul li span a{display:inline-block}.result_content ul li span a img{vertical-align:middle}i.require{color:#f60;font-family:serif;margin-right:5px}table.add_tab{width:100%;border-collapse:collapse;border:1px solid #eee}table.add_tab tr{line-height:40px;border:1px solid #eee}table.add_tab tr th{text-align:right;font-weight:normal;padding-right:10px;font-size:14px;border:1px solid #eee}table.add_tab tr td{text-align:left;padding:3px 10px;font-size:12px}table.add_tab tr td span{margin-left:10px;color:#666}table.add_tab tr td span i{margin-right:5px}.tab_title{height:35px;background:#f9f9f9;border:1px solid #e1e1e1;border-bottom:none}.tab_title li{line-height:35px;padding:0 35px;border-right:1px solid #e1e1e1;float:left;font-size:14px;cursor:pointer}.tab_title li.active{color:#495058;background:#fff;position:relative;border-bottom:1px solid #fff}.tab_content{display:none;padding:10px;border:1px solid #e1e1e1}.btn_group{overflow:hidden;padding:15px 0}.search_wrap{padding:15px 0;border-bottom:1px solid #e5e5e5}.search_tab tr{line-height:35px}.search_tab th{text-align:right;padding-right:10px;font-weight:normal}.search_tab td{padding:0 5px}table.list_tab{border-collapse:collapse;border:1px solid #ddd;font-size:13px;width:100%}table.list_tab tr{line-height:35px}table.list_tab tr:nth-child(odd){background:#f9f9f9}table.list_tab tr:hover{background:#f1f1f1}table.list_tab tr.even-tr{background:#e9fff2}table.list_tab tr input{margin-right:0}table.list_tab tr th{font-weight:normal;font-size:14px;text-align:left;background:#eee}table.list_tab tr td,table.list_tab tr th{padding:5px;border-bottom:1px solid #ddd;border-right:1px solid #e1e1e1}table.list_tab tr td.tc,table.list_tab tr th.tc{text-align:center}table.list_tab tr td a{margin-right:10px;float:left}table.list_tab tr td input[type='text']{width:20px;text-align:center;display:inline}table.list_tab tr td input[type='text'].md{width:200px;text-align:left;display:inline}table.list_tab tr td input[type='text'].lg{width:580px;text-align:left;display:inline}.page_list{margin-top:15px}.page_list ul{overflow:hidden;border:1px solid #ddd;border-radius:3px;padding:0;margin:0;display:inline-block}.page_list ul li{float:left;border:none;height:30px;line-height:30px;border-right:1px solid #ddd}.page_list ul li a{padding:6px 12px;text-decoration:none}.page_list ul li a:hover{background:#eee}.page_list ul li.active a{color:#fff;cursor:default;background-color:#337ab7;border-color:#337ab7}.page_nav{margin-top:15px;overflow:hidden}.page_nav a,.page_nav span{margin-right:10px;padding:5px 10px;float:left;border:1px solid #ddd;border-radius:3px;text-decoration:none}.page_nav a:hover{background:#eee}.page_nav span.current{background-color:#337ab7;border-color:#337ab7;color:#fff;cursor:default}.tips{padding:10px;border:1px solid #ddd}.tips h3{font-size:14px;padding-bottom:6px}.tips p{line-height:18px;font-size:12px}ul.list_pic{overflow:hidden}ul.list_pic li{float:left;margin:10px 15px 10px 0;position:relative}ul.list_pic li span{position:absolute;top:5px;right:5px;cursor:pointer}ul.list_pic li span:hover{color:#af1e1d}ul.list_btn{padding:10px 0;border-bottom:1px dashed #eaeaea}ul.list_btn li{margin:5px 0}ul.list_btn li span{border-radius:2px;display:inline-block;border:1px solid #e1e1e1;background:#f9f9f9;cursor:pointer;text-indent:2px}ul.list_btn li span i{display:inline-block}dl.attr dt{position:relative}dl.attr dt span{height:20px;width:20px;border-radius:2px;display:inline-block;border:1px solid #e1e1e1;background:#f9f9f9;cursor:pointer;text-indent:2px;position:absolute;top:9px}dl.attr dt span i{display:inline-block;position:absolute;top:3px;left:3px}table.inner_list{border-collapse:collapse;border:1px solid #ddd;margin:5px 0;font-size:12px}table.inner_list tr{border:1px solid #ddd;line-height:30px}table.inner_list tr th,table.inner_list tr td{border:1px solid #ddd;text-align:center}table.inner_list tr th{padding:0 20px;font-size:12px;font-weight:bold}table.inner_list tr td{padding:0 20px}table.inner_list tr td input{height:20px;padding:0 3px}</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -96,7 +112,6 @@
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CommonController.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Model/User.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/IndexController.php" />
@@ -108,10 +123,13 @@
         <option value="$PROJECT_DIR$/resources/views/admin/login.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/AdminLogin.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/index.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/pass.blade.php" />
+        <option value="$PROJECT_DIR$/public/admin/css/admin.css" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CommonController.php" />
+        <option value="$PROJECT_DIR$/resources/views/admin/jump.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -193,7 +211,7 @@
       <path value="$PROJECT_DIR$/vendor/gregwar/captcha" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="805" />
     <option name="width" value="1122" />
     <option name="height" value="1084" />
@@ -276,6 +294,24 @@
             <path>
               <item name="laravel-blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="laravel-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="laravel-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="laravel-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -343,19 +379,19 @@
       <workItem from="1513735904897" duration="2698000" />
       <workItem from="1513742846801" duration="8617000" />
       <workItem from="1513815178183" duration="4170000" />
-      <workItem from="1513827695854" duration="4718000" />
+      <workItem from="1513827695854" duration="7159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29443000" />
+    <option name="totallyTimeSpent" value="31884000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="805" y="0" width="1122" height="1084" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28842676" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -387,20 +423,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="159" column="28" lean-forward="false" selection-start-line="159" selection-start-column="28" selection-end-line="159" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -735,21 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CommonController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1219">
@@ -804,44 +811,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/public/admin/css/admin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="26" column="68" lean-forward="false" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+        <state relative-caret-position="749">
+          <caret line="0" column="11391" lean-forward="false" selection-start-line="0" selection-start-column="11391" selection-end-line="0" selection-end-column="11391" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
+        <state relative-caret-position="144">
+          <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="67" />
           <folding>
-            <element signature="e#46#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding>
-            <marker date="1513828688984" expanded="true" signature="9:23" ph="..." />
-            <marker date="1513828688984" expanded="true" signature="35:49" ph="..." />
-            <marker date="1513828688984" expanded="true" signature="61:70" ph="..." />
-            <marker date="1513828688984" expanded="true" signature="195:213" ph="..." />
-            <marker date="1513828688984" expanded="true" signature="371:394" ph="..." />
-            <marker date="1513828688984" expanded="true" signature="445:464" ph="..." />
-            <marker date="1513828688984" expanded="true" signature="2262:2279" ph="..." />
+            <marker date="1513820456605" expanded="true" signature="96:124" ph="..." />
+            <marker date="1513820456605" expanded="true" signature="161:205" ph="..." />
+            <marker date="1513820456605" expanded="true" signature="249:276" ph="..." />
+            <marker date="1513820456605" expanded="true" signature="332:358" ph="..." />
+            <marker date="1513820456605" expanded="true" signature="387:394" ph="..." />
+            <marker date="1513820456605" expanded="true" signature="427:436" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/pass.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        <state relative-caret-position="528">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding>
             <element signature="e#521#540#0#HTML" expanded="true" />
             <element signature="e#635#654#0#HTML" expanded="true" />
@@ -856,6 +852,67 @@
             <marker date="1513843936319" expanded="true" signature="543:551" ph="..." />
             <marker date="1513843936319" expanded="true" signature="657:666" ph="..." />
             <marker date="1513843936319" expanded="true" signature="872:886" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding>
+            <marker date="1513828688984" expanded="true" signature="9:23" ph="..." />
+            <marker date="1513828688984" expanded="true" signature="35:49" ph="..." />
+            <marker date="1513828688984" expanded="true" signature="61:70" ph="..." />
+            <marker date="1513828688984" expanded="true" signature="195:213" ph="..." />
+            <marker date="1513828688984" expanded="true" signature="371:394" ph="..." />
+            <marker date="1513828688984" expanded="true" signature="445:464" ph="..." />
+            <marker date="1513828688984" expanded="true" signature="2262:2279" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" column="58" lean-forward="false" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/jump.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+          <folding>
+            <marker date="1513846020140" expanded="true" signature="268:295" ph="..." />
+            <marker date="1513846020140" expanded="true" signature="1274:1324" ph="..." />
+            <marker date="1513846020140" expanded="true" signature="1404:1422" ph="..." />
+            <marker date="1513846020140" expanded="true" signature="1553:1598" ph="..." />
+            <marker date="1513846020140" expanded="true" signature="1669:1688" ph="..." />
+            <marker date="1513846020140" expanded="true" signature="1807:1851" ph="..." />
+            <marker date="1513846020140" expanded="true" signature="2076:2090" ph="..." />
+            <marker date="1513846020140" expanded="true" signature="2531:2545" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="75" column="9" lean-forward="true" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+          <folding>
+            <element signature="e#46#70#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CommonController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <element signature="e#46#74#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

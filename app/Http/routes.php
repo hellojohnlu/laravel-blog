@@ -25,5 +25,6 @@ Route::group(['middleware'=>['admin.login'],'prefix'=>'admin','namespace'=>'Admi
     Route::get('info','IndexController@info');      //后台首页主体内容
     Route::get('quit','LoginController@quit');      //退出登录
     Route::match(['get','post'],'editpass','IndexController@editPassword'); //修改密码
+    Route::get('jump','CommonController@jump');     //页面跳转
 });
 

@@ -60,9 +60,9 @@ class IndexController extends CommonController
                 if ($input['password_o'] === $depassword) {
                     $user->password = Crypt::encrypt($input['password']);
                     if ($user->update()){
-                        return redirect('admin/info');
+                        return redirect('admin/jump')->with(['message'=>'修改密码成功！','url' =>'info', 'jumpTime'=>3,'status'=>true]);
                     }else{
-                        echo '修改密码失败！';
+                        return back()->with(['errors'=>'修改密码失败，请重试！']);
                     }
                 }else{
                     return back()->with(['errors'=>'原密码错误！']);
