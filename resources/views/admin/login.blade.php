@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="{{asset('admin/css/ch-ui.admin.css')}}">
+	<link rel="stylesheet" href="{{asset('admin/css/admin.css')}}">
 	<link rel="stylesheet" href="{{asset('admin/font/css/font-awesome.min.css')}}">
 </head>
 <body style="background:#F3F3F4;">
