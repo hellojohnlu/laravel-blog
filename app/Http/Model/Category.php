@@ -17,7 +17,7 @@ class Category extends Model
      */
     public function tree()
     {
-        $categories = $this->all();  //获取数据表数据
+        $categories = $this->orderBy('cate_order','asc')->get();  //获取数据表数据
         $data = $this->getTree($categories, 'cate_name','cate_id','cate_pid');    //多级分类
         return $data;
     }

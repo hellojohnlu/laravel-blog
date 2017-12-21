@@ -85,4 +85,40 @@ class CategoryController extends CommonController
     {
         //
     }
+
+    /**
+     * Ajax 异步实现分类排序
+     */
+    public function changeOrder(Request $request)
+    {
+        $input = $request->all();
+        $cate = Category::find($input['cate_id']);  //取数据
+
+        // 判断传递的值是否是数字
+        if (is_numeric($input['cate_order'])) {
+            $cate->cate_order = $input['cate_order'];   //赋值
+            $res = $cate->update();                     //更新
+        }else{
+            $data = [
+                'status'    =>  0,
+                'msg'       =>  '输入的不是数字，请检查！',
+            ];
+            return $data;
+        }
+
+        // 判断是否更新成功
+        if ($res) {
+            $data = [
+                'status'    =>  1,
+                'msg'       =>  '分类排序更新成功'
+            ];
+        }else{
+            $data = [
+                'status'    =>  0,
+                'msg'       =>  '分类排序更新失败'
+            ];
+        }
+
+        return $data;   // 返回 JSON 数据
+    }
 }

@@ -60,7 +60,7 @@
                     <tr>
                         <td class="tc"><input type="checkbox" name="id[]" value="59"></td>
                         <td class="tc">
-                            <input type="text" name="ord[]" value="{{ $v->cate_order }}">
+                            <input type="text" onchange="changeOrder(this, {{ $v->cate_id }})" value="{{ $v->cate_order }}">
                         </td>
                         <td class="tc">{{ $v->cate_id }}</td>
                         <td>
@@ -109,5 +109,21 @@
         </div>
     </form>
     <!--搜索结果页面 列表 结束-->
+
+ {{--Ajax 异步加载，分类排序--}}
+<script>
+    function changeOrder(obj,cate_id) {
+        var cate_order = $(obj).val();
+        $.post("{{ url('admin/cate/changeOrder') }}",{'_token':'{{csrf_token()}}','cate_id':cate_id,'cate_order':cate_order},function (data) {
+            if(data.status == 1){   //如果更新排序成功
+                layer.msg(data.msg,{icon:6});
+                setTimeout("window.location.reload()",2000);    // 2 秒后刷新页面
+            }else{
+                layer.msg(data.msg,{icon:5});
+            }
+        });
+    }
+</script>
+
 
 @endsection
