@@ -27,7 +27,9 @@ Route::group(['middleware'=>['admin.login'],'prefix'=>'admin','namespace'=>'Admi
     Route::match(['get','post'],'editpass','IndexController@editPassword'); //修改密码
     Route::get('jump','CommonController@jump');     //页面跳转
 
-    Route::resource('category','CategoryController');   //文章栏目资源路由
+    Route::resource('category','CategoryController');   //文章分类
     Route::post('cate/changeOrder','CategoryController@changeOrder');   //分类排序
+
+    Route::resource('article','ArticleController');     //文章
 });
 
