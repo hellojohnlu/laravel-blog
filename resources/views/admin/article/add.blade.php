@@ -38,50 +38,63 @@
             <table class="add_tab">
                 <tbody>
                     <tr>
-                        <th width="120"><i class="require">*</i>父级分类：</th>
+                        <th width="120">文章分类：</th>
                         <td>
-                            <select name="cate_pid">
-                                <option value="">==顶级分类==</option>
+                            <select name="cate_id">
                                 @foreach($data as $v)
-                                <option value="{{ $v->cate_id }}">{{ $v->cate_name }}</option>
+                                <option value="{{ $v->cate_id }}">{{ $v->_cate_name }}</option>
                                 @endforeach
                             </select>
                         </td>
                     </tr>
                     <tr>
-                        <th><i class="require">*</i>分类名称：</th>
+                        <th>文章标题：</th>
                         <td>
-                            <input type="text" name="cate_name">
+                            <input type="text" class="lg" name="art_title">
                         </td>
                     </tr>
                     <tr>
-                        <th><i class="require">*</i>文章标题：</th>
+                        <th>编辑作者：</th>
                         <td>
-                            <input type="text" class="lg" name="cate_title">
+                            <input type="text" name="art_editor">
                         </td>
                     </tr>
-                    {{--<tr>--}}
-                        {{--<th>作者：</th>--}}
-                        {{--<td>--}}
-                            {{--<input type="text" name="">--}}
-                        {{--</td>--}}
-                    {{--</tr>--}}
+                    <tr>
+                        <th>缩略图：</th>
+                        <td>
+                            <input type="text" class="md" name="art_thumb">
+                        </td>
+                    </tr>
                     <tr>
                         <th>关键词：</th>
                         <td>
-                            <textarea class="lg" name="cate_keywords"></textarea>
+                            <input type="text" class="lg" name="art_tag">
                         </td>
                     </tr>
                     <tr>
                         <th>描述：</th>
                         <td>
-                            <textarea name="cate_description"></textarea>
+                            <textarea name="art_description"></textarea>
                         </td>
                     </tr>
                     <tr>
-                        <th><i class="require">*</i>排序：</th>
+                        <th>文章内容：</th>
                         <td>
-                            <input type="text" class="sm" name="cate_order">
+                            <script type="text/javascript" charset="utf-8" src="{{ asset('ueditor/ueditor.config.js') }}"></script>
+                            <script type="text/javascript" charset="utf-8" src="{{ asset('ueditor/ueditor.all.min.js') }}"> </script>
+                            <script type="text/javascript" charset="utf-8" src="{{ asset('ueditor/lang/zh-cn/zh-cn.js') }}"></script>
+                            <style>
+                                .edui-default{line-height: 28px;}
+                                div.edui-combox-body,div.edui-button-body,div.edui-splitbutton-body
+                                {overflow: hidden; height:20px;}
+                                div.edui-box{overflow: hidden; height:22px;}
+                            </style>
+                            <script id="editor" type="text/plain" style="width: 100%;height:500px;"></script>
+                            <script type="text/javascript">
+                            //实例化编辑器
+                            var ue = UE.getEditor('editor');
+                            </script>
+                            <textarea class="lg" name="art_content"></textarea>
                         </td>
                     </tr>
                     <tr>
