@@ -121,7 +121,23 @@ class CategoryController extends CommonController
      */
     public function destroy($id)
     {
-        //
+        $res = Category::where('cate_id',$id)->delete();    // 删除分类
+
+        //如果删除的分类下有子分类，则把子分类变成顶级分类
+        Category::where('cate_pid',$id)->update(['cate_pid'=>0]);
+
+        if ($res) {
+            $data = [
+                'status'    =>  1,
+                'msg'       =>  '删除分类成功'
+            ];
+        }else{
+            $data = [
+                'status'    =>  0,
+                'msg'       =>  '删除分类失败，请稍后重试'
+            ];
+        }
+        return $data;
     }
 
 
