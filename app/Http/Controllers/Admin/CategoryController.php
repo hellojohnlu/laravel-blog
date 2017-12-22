@@ -41,7 +41,7 @@ class CategoryController extends CommonController
     public function store(Request $request)
     {
         if ($request->isMethod('post')) {
-            $input = $request->except('_token');
+            $input = $request->except('_token');    //排除_token值
 
             // 定义验证规则
             $rules = [
@@ -85,9 +85,11 @@ class CategoryController extends CommonController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($cate_id)
     {
-        //
+        $field = Category::find($cate_id);  //查询数据
+        $data = Category::where('cate_pid',0)->get();   //获取文章的顶级分类
+        return view('admin.category.edit',compact('field','data'));
     }
 
     /**
@@ -97,9 +99,18 @@ class CategoryController extends CommonController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $cate_id)
     {
-        //
+        if ($request->isMethod('PUT')) {
+            $input = $request->except('_token','_method');  //排除_token与_method值
+
+            $res = Category::where('cate_id',$cate_id)->update($input);
+            if ($res) {
+                return redirect('admin/jump')->with(['message'=>'修改分类成功！','url' =>'category', 'jumpTime'=>3,'status'=>true]);
+            }else{
+                return back()->with('errors','修改分类失败，请稍后重试！');
+            }
+        }
     }
 
     /**
