@@ -1,2 +1,2 @@
 # laravel-blog
-laravel博客项目，基于5.2版本
+laravel 博客项目，基于 5.2 版本

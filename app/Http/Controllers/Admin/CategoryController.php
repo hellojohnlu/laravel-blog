@@ -27,18 +27,22 @@ class CategoryController extends CommonController
      */
     public function create()
     {
-        //
+        $data = Category::where('cate_pid',0)->get();   //获取文章的顶级分类
+        return view('admin/category/add',compact('data'));
     }
 
     /**
-     * Store a newly created resource in storage. P0ST.admin/category
+     * 添加分类的提交处理 P0ST.admin/category
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
+        if ($request->isMethod('post')) {
+            $input = $request->all();
+            dd($input);
+        }
     }
 
     /**
@@ -86,8 +90,12 @@ class CategoryController extends CommonController
         //
     }
 
+
     /**
      * Ajax 异步实现分类排序
+     *
+     * @param Request $request
+     * @return array
      */
     public function changeOrder(Request $request)
     {
