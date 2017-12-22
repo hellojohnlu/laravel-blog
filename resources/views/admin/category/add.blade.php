@@ -22,8 +22,18 @@
         </div>
     </div>
     <!--结果集标题与导航组件 结束-->
-    
     <div class="result_wrap">
+        @if(count($errors) > 0)
+            <div class="mark">
+                @if(is_object($errors))
+                    @foreach($errors->all() as $error)
+                        <p style="color: red;">{{ $error }}</p>
+                    @endforeach
+                @else
+                    <p style="color: red;">{{ $errors }}</p>
+                @endif
+            </div>
+        @endif
         <form action="{{ url('admin/category') }}" method="POST">
             {{csrf_field()}}
             <table class="add_tab">

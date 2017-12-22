@@ -6,6 +6,7 @@ use App\Http\Model\Category;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Illuminate\Support\Facades\Validator;
 
 class CategoryController extends CommonController
 {
@@ -40,8 +41,30 @@ class CategoryController extends CommonController
     public function store(Request $request)
     {
         if ($request->isMethod('post')) {
-            $input = $request->all();
-            dd($input);
+            $input = $request->except('_token');
+
+            // 定义验证规则
+            $rules = [
+                'cate_name'    =>  'required',
+            ];
+
+            // 提示信息
+            $messages = [
+                'cate_name.required'   =>  '分类名称是必填字段',
+            ];
+
+            $validator = Validator::make($input, $rules, $messages);    //调用验证器
+
+            if ($validator->passes()) {
+                $res = Category::create($input);    //数据入库
+                if ($res) {
+                    return redirect('admin/jump')->with(['message'=>'添加分类成功！','url' =>'category', 'jumpTime'=>3,'status'=>true]);
+                }else{
+                    return back()->with('errors','添加分类失败，请稍后重试！');
+                }
+            }else{
+                return back()->withErrors($validator);
+            }
         }
     }
 

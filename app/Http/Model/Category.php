@@ -10,6 +10,8 @@ class Category extends Model
     protected $primaryKey = 'cate_id';
     public $timestamps = false;
 
+    protected $guarded = [];    //排序不让写入的字段
+
     /**
      * 多级分类目录树
      *
