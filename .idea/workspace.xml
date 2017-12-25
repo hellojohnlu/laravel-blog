@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f277c6d-1b4b-45db-87cd-64bfcaf8b0d1" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/img/uploadify-cancel.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/uploadify/Change Log.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/uploadify/check-exists.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/uploadify/index.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/uploadify/jquery.uploadify.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/uploadify/jquery.uploadify.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/uploadify/license.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/uploadify/uploadify-cancel.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/uploadify/uploadify.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/uploadify/uploadify.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/uploadify/uploadify.swf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/demo.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CommonController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CommonController.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" afterPath="$PROJECT_DIR$/config/filesystems.php" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/article/add.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/article/add.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/layout.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/layout.blade.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,41 +34,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ArticleController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-288">
-              <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/admin/article/add.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="775">
-              <caret line="90" column="36" lean-forward="false" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
+            <state relative-caret-position="743">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="32" />
               <folding>
-                <element signature="e#3799#3832#0#HTML" expanded="true" />
-                <marker date="1513961631098" expanded="true" signature="9:23" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="35:44" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="203:220" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="501:530" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="595:617" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="771:789" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="842:860" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="891:915" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="966:974" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="1080:1089" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="1177:1200" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="1233:1245" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="1506:1517" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="1568:1581" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="1587:1603" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="3034:3070" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="3166:3203" ph="..." />
-                <marker date="1513961631098" expanded="true" signature="3300:3338" ph="..." />
+                <element signature="e#46#74#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,8 +49,63 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+            <state relative-caret-position="600">
+              <caret line="34" column="39" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/FileController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/article/add.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="76" column="47" lean-forward="false" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
+              <folding>
+                <element signature="e#2457#2500#0#HTML" expanded="true" />
+                <marker date="1514210192002" expanded="true" signature="9:23" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="35:44" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="203:220" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="501:530" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="595:617" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="771:789" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="842:860" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="891:915" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="966:974" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="1084:1093" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="1182:1204" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="1267:1279" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="1540:1551" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="1602:1615" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="1621:1637" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="2549:2587" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="2707:2739" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="3079:3091" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="3323:3342" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="4611:4647" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="4743:4780" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="4877:4915" ph="..." />
+                <marker date="1514210192002" expanded="true" signature="6128:6140" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filesystems.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/filesystems.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -70,10 +113,18 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>@charset &quot;utf-8&quot;;*{margin:0;padding:0;list-style:none}img{border:0}html,body{width:100%;height:100%}body{background:#fff;color:#333;font-size:14px;font-family:&quot;Microsoft Yahei&quot;,'Simsun',&quot;Lucida Grande&quot;,Verdana,Lucida,Helvetica,Arial,sans-serif}a{color:#428bca;text-decoration:none;cursor:pointer;outline:0}a:hover{color:#1963aa;text-decoration:underline}p{line-height:20px;margin-bottom:5px}.red{color:red;}.blue{color:blue;}textarea,input[type=&quot;text&quot;],input[type=&quot;password&quot;],input[type=&quot;datetime&quot;],input[type=&quot;datetime-local&quot;],input[type=&quot;date&quot;],input[type=&quot;month&quot;],input[type=&quot;time&quot;],input[type=&quot;week&quot;],input[type=&quot;number&quot;],input[type=&quot;email&quot;],input[type=&quot;url&quot;],input[type=&quot;search&quot;],input[type=&quot;tel&quot;],input[type=&quot;color&quot;],.uneditable-input{background-color:#fff;border:1px solid #ccc;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);-webkit-transition:border linear .2s,box-shadow linear .2s;-moz-transition:border linear .2s,box-shadow linear .2s;-o-transition:border linear .2s,box-shadow linear .2s;transition:border linear .2s,box-shadow linear .2s;border-radius:3px}textarea:focus,input[type=&quot;text&quot;]:focus,input[type=&quot;password&quot;]:focus,input[type=&quot;datetime&quot;]:focus,input[type=&quot;datetime-local&quot;]:focus,input[type=&quot;date&quot;]:focus,input[type=&quot;month&quot;]:focus,input[type=&quot;time&quot;]:focus,input[type=&quot;week&quot;]:focus,input[type=&quot;number&quot;]:focus,input[type=&quot;email&quot;]:focus,input[type=&quot;url&quot;]:focus,input[type=&quot;search&quot;]:focus,input[type=&quot;tel&quot;]:focus,input[type=&quot;color&quot;]:focus,.uneditable-input:focus{border-color:rgba(82,168,236,0.8);outline:0;outline:thin dotted \9;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6)}input[type='text'],input[type='password']{width:350;margin-right:5px;padding:6px 5px;line-height:12px;font-size:12px}input[type='text'].sm{width:80px}input[type='text'].md,input[type='password'].md{width:250px}input[type='text'].lg{width:580px}textarea{width:580px;height:55px;padding:6px 5px;display:block;margin:10px 0}textarea.lg{width:580px;height:100px}label{margin-right:15px;vertical-align:middle;font-family:tahoma}input[type='radio']{margin-right:5px;vertical-align:middle;margin-top:-2px;margin-bottom:1px}input[type='checkbox']{margin-right:5px;vertical-align:middle;margin-top:-2px;margin-bottom:1px}select{font-size:12px;border-collapse:collapse;padding:0 5px;height:25px;line-height:25px}select option{padding:3px 5px;font-size:12px;vertical-align:middle}input[type='submit'],input[type='button']{padding:0 25px;height:25px;vertical-align:middle;margin-right:10px;color:#fff;letter-spacing:2px;border-radius:3px;background:#337ab7;border:1px solid #286090;cursor:pointer}input[type='submit']:hover,input[type='button']:hover{background:#286090}input[type='button'].back{background:#f0f0f0;color:#666;border:1px solid #ccc;border-collapse:collapse}input[type='button'].back:hover{background:#e6e6e6}.clear{clear:both}.red{color:#d9534f}.blue{color:#337ab7}.yellow{color:#ec971f}.left{float:left}.right{float:right}.login_box h1{text-align:center;color:#e6e6e6;font-size:120px;margin:50px 0 10px 0;font-weight:normal}.login_box h2{text-align:center;color:#333;font-size:20px;margin-bottom:20px;font-weight:normal}.login_box .form{width:240px;margin:0 auto}.login_box .form ul li{list-style-type:none;margin-bottom:10px;position:relative}.login_box .form ul li input.text{width:228px;height:23px;color:#555;padding:5px;border:1px solid #ccc;border-radius:3px;text-indent:38px}.login_box .form ul li input[type='submit']{font-family:&quot;微软雅黑&quot;;width:240px;height:33px;border-radius:3px;color:#fff;background:#337ab7;border:1px solid #2e6da4}.login_box .form ul li input[type='submit']:hover{background:#286090}.login_box .form ul li input.code{width:120px;height:23px;color:#555;padding:5px;border:1px solid #ccc;border-radius:3px;text-indent:38px}.login_box .form ul li span{background:#eee;height:33px;width:33px;text-align:center;line-height:33px;border-right:1px solid #ccc;border-radius:3px 0 0 3px;position:absolute;left:1px;top:1px}.login_box .form ul li img{width:100px;height:33px;float:right;border:1px solid #ccc}.login_box .form p{font-size:12px;line-height:30px;color:#333;text-align:center}.login_box .form p a{line-height:30px;color:#ff9a00}.top_box{height:50px;line-height:50px;width:100%;background:#222;position:fixed;top:0;left:0;font-size:14px;color:#9d9d9d}.top_box a{text-decoration:none}.top_box .top_left{float:left}.top_box .top_left .logo{float:left;width:190px;text-align:center;font-size:18px;font-weight:bold}.top_box .top_left .logo:hover{color:#fff}.top_box .top_left ul{float:left}.top_box .top_left ul li{float:left}.top_box .top_left ul li a{float:left;padding:0 25px;color:#9d9d9d;text-shadow:1px 1px 1px #000}.top_box .top_left ul li a:hover{background:#343434;color:#fff}.top_box .top_left ul li a.active{color:#fff;text-shadow:1px 1px 1px #003;background:#080808}.top_box .top_right{float:right}.top_box .top_right ul li{float:left;color:#fff;margin-right:20px}.top_box .top_right ul li a{float:left;margin-left:5px;display:inline;color:#9d9d9d;zoom:1}.top_box .top_right ul li a:hover{color:#fff}.menu_box{position:fixed;top:50px;left:0;bottom:0;overflow:scroll;overflow-x:hidden;width:189px;background:#f2f2f2;border-right:1px solid #ccc;z-index:10}.menu_box ul{font-size:14px}.menu_box ul li{border:1px solid #e5e5e5;border-width:1px 0}.menu_box ul li h3{font-size:14px;padding:0 16px 0 18px;display:block;height:38px;line-height:38px;color:#333;cursor:pointer}.menu_box ul li i{margin-right:5px;color:#666;font-size:14px}.menu_box ul li ul.sub_menu{border-top:1px solid #e5e5e5;background:#fff;display:none}.menu_box ul li ul.sub_menu li{padding-left:10px}.menu_box ul li ul.sub_menu li a{padding:0 16px 0 20px;display:block;height:38px;line-height:38px;color:#333;text-decoration:none}.menu_box ul li ul.sub_menu li a:hover{color:#1963aa}.menu_box ul li ul.sub_menu li a:hover i{color:#1963aa}.menu_box ul li ul.sub_menu li.on{color:#1963aa}.menu_box ul li ul.sub_menu li.on a{color:#1963aa}.menu_box ul li ul.sub_menu li.on a i{color:#1963aa}.main_box{position:fixed;left:190px;right:0;top:50px;bottom:35px}.bottom_box{width:100%;height:35px;line-height:35px;font-size:12px;text-indent:200px;background:#f2f2f2;border-top:1px solid #ccc;position:fixed;left:0;bottom:0}.bottom_box a{color:#1963aa}.crumb_warp{height:40px;line-height:39px;text-indent:5px;border-bottom:1px solid #e5e5e5;background:#f5f5f5}.crumb_warp i{font-size:18px}.result_wrap{padding:10px 20px;border-bottom:1px solid #e5e5e5}.result_wrap i{margin-right:5px}.result_title{line-height:35px;padding-bottom:5px;overflow:hidden}.result_title h3{font-size:14px}.result_title .mark{padding:5px 10px;border:1px dashed #e5e5e5;background:#fcf8e3;border-radius:3px;margin-bottom:3px}.result_title .mark p{padding:0;margin:0;line-height:22px;font-size:12px;color:#666}.result_content .short_wrap a{margin-right:20px}.result_content ul li{line-height:35px;border-bottom:1px dashed #eaeaea}.result_content ul li label{color:#909090;display:inline-block;width:150px;padding-right:10px;text-align:right}.result_content ul li span{font-size:15px}.result_content ul li span a{display:inline-block}.result_content ul li span a img{vertical-align:middle}i.require{color:#f60;font-family:serif;margin-right:5px}table.add_tab{width:100%;border-collapse:collapse;border:1px solid #eee}table.add_tab tr{line-height:40px;border:1px solid #eee}table.add_tab tr th{text-align:right;font-weight:normal;padding-right:10px;font-size:14px;border:1px solid #eee}table.add_tab tr td{text-align:left;padding:3px 10px;font-size:12px}table.add_tab tr td span{margin-left:10px;color:#666}table.add_tab tr td span i{margin-right:5px}.tab_title{height:35px;background:#f9f9f9;border:1px solid #e1e1e1;border-bottom:none}.tab_title li{line-height:35px;padding:0 35px;border-right:1px solid #e1e1e1;float:left;font-size:14px;cursor:pointer}.tab_title li.active{color:#495058;background:#fff;position:relative;border-bottom:1px solid #fff}.tab_content{display:none;padding:10px;border:1px solid #e1e1e1}.btn_group{overflow:hidden;padding:15px 0}.search_wrap{padding:15px 0;border-bottom:1px solid #e5e5e5}.search_tab tr{line-height:35px}.search_tab th{text-align:right;padding-right:10px;font-weight:normal}.search_tab td{padding:0 5px}table.list_tab{border-collapse:collapse;border:1px solid #ddd;font-size:13px;width:100%}table.list_tab tr{line-height:35px}table.list_tab tr:nth-child(odd){background:#f9f9f9}table.list_tab tr:hover{background:#f1f1f1}table.list_tab tr.even-tr{background:#e9fff2}table.list_tab tr input{margin-right:0}table.list_tab tr th{font-weight:normal;font-size:14px;text-align:left;background:#eee}table.list_tab tr td,table.list_tab tr th{padding:5px;border-bottom:1px solid #ddd;border-right:1px solid #e1e1e1}table.list_tab tr td.tc,table.list_tab tr th.tc{text-align:center}table.list_tab tr td a{margin-right:10px;float:left}table.list_tab tr td input[type='text']{width:20px;text-align:center;display:inline}table.list_tab tr td input[type='text'].md{width:200px;text-align:left;display:inline}table.list_tab tr td input[type='text'].lg{width:580px;text-align:left;display:inline}.page_list{margin-top:15px}.page_list ul{overflow:hidden;border:1px solid #ddd;border-radius:3px;padding:0;margin:0;display:inline-block}.page_list ul li{float:left;border:none;height:30px;line-height:30px;border-right:1px solid #ddd}.page_list ul li a{padding:6px 12px;text-decoration:none}.page_list ul li a:hover{background:#eee}.page_list ul li.active a{color:#fff;cursor:default;background-color:#337ab7;border-color:#337ab7}.page_nav{margin-top:15px;overflow:hidden}.page_nav a,.page_nav span{margin-right:10px;padding:5px 10px;float:left;border:1px solid #ddd;border-radius:3px;text-decoration:none}.page_nav a:hover{background:#eee}.page_nav span.current{background-color:#337ab7;border-color:#337ab7;color:#fff;cursor:default}.tips{padding:10px;border:1px solid #ddd}.tips h3{font-size:14px;padding-bottom:6px}.tips p{line-height:18px;font-size:12px}ul.list_pic{overflow:hidden}ul.list_pic li{float:left;margin:10px 15px 10px 0;position:relative}ul.list_pic li span{position:absolute;top:5px;right:5px;cursor:pointer}ul.list_pic li span:hover{color:#af1e1d}ul.list_btn{padding:10px 0;border-bottom:1px dashed #eaeaea}ul.list_btn li{margin:5px 0}ul.list_btn li span{border-radius:2px;display:inline-block;border:1px solid #e1e1e1;background:#f9f9f9;cursor:pointer;text-indent:2px}ul.list_btn li span i{display:inline-block}dl.attr dt{position:relative}dl.attr dt span{height:20px;width:20px;border-radius:2px;display:inline-block;border:1px solid #e1e1e1;background:#f9f9f9;cursor:pointer;text-indent:2px;position:absolute;top:9px}dl.attr dt span i{display:inline-block;position:absolute;top:3px;left:3px}table.inner_list{border-collapse:collapse;border:1px solid #ddd;margin:5px 0;font-size:12px}table.inner_list tr{border:1px solid #ddd;line-height:30px}table.inner_list tr th,table.inner_list tr td{border:1px solid #ddd;text-align:center}table.inner_list tr th{padding:0 20px;font-size:12px;font-weight:bold}table.inner_list tr td{padding:0 20px}table.inner_list tr td input{height:20px;padding:0 3px}</find>
       <find>border-bottom</find>
+      <find>uploader</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,8 +152,6 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/category/list.html" />
         <option value="$PROJECT_DIR$/resources/views/admin/category/list.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CommonController.php" />
-        <option value="$PROJECT_DIR$/resources/views/admin/layout.blade.php" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/app/Http/Model/Category.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CategoryController.php" />
@@ -111,9 +160,15 @@
         <option value="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" />
         <option value="$PROJECT_DIR$/public/admin/css/admin.css" />
         <option value="$PROJECT_DIR$/resources/views/admin/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/demo.html" />
+        <option value="$PROJECT_DIR$/resources/views/admin/layout.blade.php" />
+        <option value="$PROJECT_DIR$/public/uploadify/jquery.uploadify.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/CommonController.php" />
+        <option value="$PROJECT_DIR$/config/filesystems.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/FileController.php" />
         <option value="$PROJECT_DIR$/resources/views/admin/article/add.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php" />
       </list>
     </option>
   </component>
@@ -195,10 +250,10 @@
       <path value="$PROJECT_DIR$/vendor/gregwar/captcha" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="788" />
-    <option name="width" value="1134" />
-    <option name="height" value="1084" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1087" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -234,8 +289,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="Scratches">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+            <path>
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Extensions" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="com.intellij.database" type="61db50fb:ScratchProjectViewPane$MyPsiNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,64 +320,41 @@
             <path>
               <item name="laravel-blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="laravel-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="laravel-blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="laravel-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="laravel-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="laravel-blog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
-    <property name="SearchEverywhereHistoryKey" value="admin.css&#9;FILE&#9;file://D:/laragon/www/laravel-blog/public/admin/css/admin.css&#10;ind&#9;FILE&#9;file://D:/laragon/www/laravel-blog/resources/views/admin/index.blade.php&#10;layou&#9;FILE&#9;file://D:/laragon/www/laravel-blog/resources/views/admin/layout.blade.php" />
+    <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
+    <property name="SearchEverywhereHistoryKey" value="uploader&#9;FILE&#9;file://D:/laragon/www/laravel-blog/public/ueditor/php/Uploader.class.php&#10;laravel.log&#9;FILE&#9;file://D:/laragon/www/laravel-blog/storage/logs/laravel.log&#10;Common&#9;FILE&#9;file://D:/laragon/www/laravel-blog/app/Http/Controllers/Admin/CommonController.php&#10;admin.css&#9;FILE&#9;file://D:/laragon/www/laravel-blog/public/admin/css/admin.css&#10;ind&#9;FILE&#9;file://D:/laragon/www/laravel-blog/resources/views/admin/index.blade.php&#10;layou&#9;FILE&#9;file://D:/laragon/www/laravel-blog/resources/views/admin/layout.blade.php" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\laragon\www\laravel-blog\resources\org" />
+      <recent name="D:\laragon\www\laravel-blog\public" />
+      <recent name="D:\laragon\www\laravel-blog\public\img" />
       <recent name="D:\laragon\www\laravel-blog\resources\views\admin\article" />
       <recent name="D:\laragon\www\laravel-blog\resources\views\admin\category" />
-      <recent name="D:\laragon\www\laravel-blog\resources\views\admin" />
-      <recent name="D:\laragon\www\laravel-blog\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\laragon\www\laravel-blog\app\Http\Controllers\Admin" />
+      <recent name="D:\laragon\www\laravel-blog\vendor" />
+      <recent name="D:\laragon\www\laravel-blog\resources\views\vendor" />
       <recent name="D:\laragon\www\laravel-blog\public" />
       <recent name="D:\laragon\www\laravel-blog\resources\views" />
-      <recent name="D:\laragon\www\laravel-blog\resources" />
-      <recent name="D:\laragon\www\laravel-blog\app\Http\Controllers\Admin" />
-      <recent name="D:\laragon\www\laravel-blog\resources\views\admin\category" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -342,37 +388,40 @@
       <workItem from="1513827695854" duration="8755000" />
       <workItem from="1513849336844" duration="14181000" />
       <workItem from="1513903662223" duration="13755000" />
-      <workItem from="1513955706048" duration="2425000" />
+      <workItem from="1513955706048" duration="9756000" />
+      <workItem from="1513998917239" duration="935000" />
+      <workItem from="1514002865800" duration="5730000" />
+      <workItem from="1514169517152" duration="14405000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63841000" />
+    <option name="totallyTimeSpent" value="92242000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="788" y="0" width="1134" height="1084" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14479166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50549453" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23792486" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5106168" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,122 +431,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CommonController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/admin/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="63" column="38" lean-forward="false" selection-start-line="63" selection-start-column="29" selection-end-line="63" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="54" column="22" lean-forward="false" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Model/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1219">
-          <caret line="51" column="56" lean-forward="false" selection-start-line="51" selection-start-column="56" selection-end-line="51" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/info.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/AdminLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/login.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/jump.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CommonController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="739">
-          <caret line="32" column="5" lean-forward="false" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/layer/layer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -586,14 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="12" column="43" lean-forward="false" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -629,7 +560,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="e#46#74#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -652,17 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1456371868000" expanded="true" signature="4656:4666" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/ueditor/php/Uploader.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -670,7 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -678,7 +599,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,7 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -694,7 +613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -702,7 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,50 +634,180 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
           <caret line="0" column="11274" lean-forward="false" selection-start-line="0" selection-start-column="11274" selection-end-line="0" selection-end-column="11274" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/.gitkeep">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/uploadify/uploadify-cancel.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/uploadify/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="5" column="56" lean-forward="false" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/logs/laravel.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474384">
+          <caret line="12521" column="156" lean-forward="true" selection-start-line="12521" selection-start-column="156" selection-end-line="12522" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/ueditor/php/Uploader.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7463">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/uploadify/jquery.uploadify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="99" column="64" lean-forward="false" selection-start-line="99" selection-start-column="64" selection-end-line="99" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/CommonController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="33" column="5" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/uploadify/uploadify.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/filesystems.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="30" column="39" lean-forward="true" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+        <state relative-caret-position="600">
+          <caret line="34" column="39" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/uploads/2017-12-25-21-43-51-5a4100978c952.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/storage/app/uploads/201712252147235a41016b82dbf.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/article/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="76" column="47" lean-forward="false" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
+          <folding>
+            <element signature="e#2457#2500#0#HTML" expanded="true" />
+            <marker date="1514210192002" expanded="true" signature="9:23" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="35:44" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="203:220" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="501:530" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="595:617" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="771:789" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="842:860" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="891:915" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="966:974" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="1084:1093" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="1182:1204" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="1267:1279" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="1540:1551" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="1602:1615" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="1621:1637" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="2549:2587" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="2707:2739" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="3079:3091" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="3323:3342" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="4611:4647" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="4743:4780" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="4877:4915" ph="..." />
+            <marker date="1514210192002" expanded="true" signature="6128:6140" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/FileController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ArticleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-288">
-          <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/article/add.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="90" column="36" lean-forward="false" selection-start-line="90" selection-start-column="36" selection-end-line="90" selection-end-column="36" />
+        <state relative-caret-position="743">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="32" />
           <folding>
-            <element signature="e#3799#3832#0#HTML" expanded="true" />
-            <marker date="1513961631098" expanded="true" signature="9:23" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="35:44" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="203:220" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="501:530" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="595:617" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="771:789" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="842:860" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="891:915" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="966:974" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="1080:1089" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="1177:1200" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="1233:1245" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="1506:1517" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="1568:1581" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="1587:1603" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="3034:3070" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="3166:3203" ph="..." />
-            <marker date="1513961631098" expanded="true" signature="3300:3338" ph="..." />
+            <element signature="e#46#74#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

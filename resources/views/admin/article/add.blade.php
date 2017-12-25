@@ -29,11 +29,12 @@
                         <p style="color: red;">{{ $error }}</p>
                     @endforeach
                 @else
-                    <p style="color: red;">{{ $errors }}</p>
+                        <p style="color: red;">{{ $errors }}</p>
                 @endif
             </div>
         @endif
-        <form action="{{ url('admin/category') }}" method="POST">
+
+        <form action="{{ url('admin/article') }}" method="POST" enctype="multipart/form-data">
             {{csrf_field()}}
             <table class="add_tab">
                 <tbody>
@@ -63,6 +64,26 @@
                         <th>缩略图：</th>
                         <td>
                             <input type="text" class="md" name="art_thumb">
+                            <input type="file" name="picture" style="max-height: 200px;max-width: 350px;">
+                            {{--<script src="{{asset('uploadify/jquery.uploadify.js')}}" type="text/javascript"></script>--}}
+                            {{--<link rel="stylesheet" type="text/css" href="{{asset('uploadify/uploadify.css')}}">--}}
+                            {{--<input id="file_upload" type="file" name="file_upload" />--}}
+                            {{--<script>--}}
+                                {{--$(function() {--}}
+                                    {{--$("#file_upload").uploadify({--}}
+                                        {{--_token        : '{{csrf_token()}}',--}}
+                                        {{--height        : 30,--}}
+                                        {{--swf           : '/uploadify/uploadify.swf',--}}
+                                        {{--uploader      : "{{url('admin/upload')}}",--}}
+                                        {{--width         : 120--}}
+                                    {{--});--}}
+                                {{--});--}}
+                            {{--</script>--}}
+                            {{--<style>--}}
+                                {{--.uploadify{display:inline-block;}--}}
+                                {{--.uploadify-button{border:none; border-radius:5px; margin-top:8px;}--}}
+                                {{--table.add_tab tr td span.uploadify-button-text{color: #FFF; margin:0;}--}}
+                            {{--</style>--}}
                         </td>
                     </tr>
                     <tr>

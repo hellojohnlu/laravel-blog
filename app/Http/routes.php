@@ -31,5 +31,7 @@ Route::group(['middleware'=>['admin.login'],'prefix'=>'admin','namespace'=>'Admi
     Route::post('cate/changeOrder','CategoryController@changeOrder');   //分类排序
 
     Route::resource('article','ArticleController');     //文章
+//    Route::match(['get','post'],'upload','CommonController@upload');         //图片上传
+    Route::any('upload','FileController@upload');         //图片上传
 });
 
