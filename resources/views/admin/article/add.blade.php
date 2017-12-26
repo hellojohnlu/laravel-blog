@@ -26,10 +26,10 @@
             <div class="mark">
                 @if(is_object($errors))
                     @foreach($errors->all() as $error)
-                        <p style="color: red;">{{ $error }}</p>
+                        <p style="color: red; text-align: center;">{{ $error }}</p>
                     @endforeach
                 @else
-                        <p style="color: red;">{{ $errors }}</p>
+                        <p style="color: red; text-align: center;">{{ $errors }}</p>
                 @endif
             </div>
         @endif
@@ -63,7 +63,7 @@
                     <tr>
                         <th>缩略图：</th>
                         <td>
-                            <input type="text" class="md" name="art_thumb">
+                            <input type="text" name="art_thumb" style="display: none">
                             <input type="file" name="picture" style="max-height: 200px;max-width: 350px;">
                             {{--<script src="{{asset('uploadify/jquery.uploadify.js')}}" type="text/javascript"></script>--}}
                             {{--<link rel="stylesheet" type="text/css" href="{{asset('uploadify/uploadify.css')}}">--}}
@@ -110,12 +110,11 @@
                                 {overflow: hidden; height:20px;}
                                 div.edui-box{overflow: hidden; height:22px;}
                             </style>
-                            <script id="editor" type="text/plain" style="width: 100%;height:500px;"></script>
+                            <script id="editor" name="art_content" type="text/plain" style="width: 100%;height:500px;"></script>
                             <script type="text/javascript">
                             //实例化编辑器
                             var ue = UE.getEditor('editor');
                             </script>
-                            <textarea class="lg" name="art_content"></textarea>
                         </td>
                     </tr>
                     <tr>
