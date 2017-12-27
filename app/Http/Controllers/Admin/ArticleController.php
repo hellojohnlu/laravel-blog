@@ -117,11 +117,15 @@ class ArticleController extends CommonController
      */
     public function edit($id)
     {
-        //
+        $data = (new Category)->tree(); // 获取文章分类
+
+        $field = Article::find($id);
+
+        return view('admin.article.edit',compact('data','field'));
     }
 
     /**
-     * Update the specified resource in storage.  PUT->admin/article/{article}
+     * 编辑文章处理提交  PUT->admin/article/{article}
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -129,7 +133,17 @@ class ArticleController extends CommonController
      */
     public function update(Request $request, $id)
     {
-        //
+        if ($request->isMethod('put')) {
+            $data = $request->except('_token','picture','_method');
+
+            $res = Article::where('art_id',$id)->update($data); // 更新文章
+
+            if ($res) {
+                return redirect('admin/jump')->with(['message'=>'更新文章成功','url' =>'article', 'jumpTime'=>3,'status'=>true]);
+            }else{
+                return back()->with('errors','更新文章失败！');
+            }
+        }
     }
 
     /**
