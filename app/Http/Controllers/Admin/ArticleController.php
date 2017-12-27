@@ -18,7 +18,8 @@ class ArticleController extends CommonController
      */
     public function index()
     {
-        return 'All articles';
+        $data = Article::orderBy('art_id','desc')->paginate(5);   // 获取文章数据
+        return view('admin.article.index',compact('data',$data));
     }
 
     /**

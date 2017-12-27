@@ -31,6 +31,5 @@ Route::group(['middleware'=>['admin.login'],'prefix'=>'admin','namespace'=>'Admi
     Route::post('cate/changeOrder','CategoryController@changeOrder');   //分类排序
 
     Route::resource('article','ArticleController');     //文章
-
 });
 
