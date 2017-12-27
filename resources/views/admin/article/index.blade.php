@@ -17,9 +17,8 @@
             <!--快捷导航 开始-->
             <div class="result_content">
                 <div class="short_wrap">
-                    <a href="#"><i class="fa fa-plus"></i>新增文章</a>
-                    <a href="#"><i class="fa fa-recycle"></i>批量删除</a>
-                    <a href="#"><i class="fa fa-refresh"></i>更新排序</a>
+                    <a href="{{ url('admin/article/create') }}"><i class="fa fa-plus"></i>写文章</a>
+                    <a href="{{ url('admin/article') }}"><i class="fa fa-recycle"></i>全部文章</a>
                 </div>
             </div>
             <!--快捷导航 结束-->
@@ -47,7 +46,7 @@
                         <td>{{ date('Y-m-d H:i',$v->art_time) }}</td>
                         <td>
                             <a href="{{ url('admin/article/'.$v->art_id.'/edit') }}">修改</a>
-                            <a href="#">删除</a>
+                            <a href="javascript:void(0)" onclick="delArtcle({{ $v->art_id }})">删除</a>
                         </td>
                     </tr>
                     @endforeach
@@ -66,4 +65,26 @@
             padding: 6px 12px;
         }
     </style>
+
+    <script>
+        // 删除文章
+        function delArtcle(art_id) {
+            //询问框
+            layer.confirm('您确定要删除这篇文章吗？', {
+                btn: ['确定','取消'] //按钮
+            }, function(){
+                // 异步删除分类
+                $.post("{{url('admin/article/')}}/"+art_id,{'_token':'{{csrf_token()}}','_method':'delete'},function (data) {
+                    if(data.status == 1){
+                        layer.msg(data.msg,{icon:6});
+                        setTimeout("window.location.reload()",2000);    // 2 秒后刷新页面
+                    }else{
+                        layer.msg(data.msg,{icon:5});
+                    }
+                });
+            }, function(){
+
+            });
+        }
+    </script>
 @endsection

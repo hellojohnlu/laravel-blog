@@ -147,13 +147,26 @@ class ArticleController extends CommonController
     }
 
     /**
-     * Remove the specified resource from storage.  DELETE->admin/article/{article}
+     * 删除文章  DELETE->admin/article/{article}
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        //
+        $res = Article::where('art_id',$id)->delete();    // 删除文章
+
+        if ($res) {
+            $data = [
+                'status'    =>  1,
+                'msg'       =>  '删除文章成功'
+            ];
+        }else{
+            $data = [
+                'status'    =>  0,
+                'msg'       =>  '删除文章失败，请稍后重试'
+            ];
+        }
+        return $data;
     }
 }
