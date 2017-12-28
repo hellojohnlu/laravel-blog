@@ -65,7 +65,7 @@
                         <th>缩略图：</th>
                         <td>
                             <div><img src="{{url('uploads/'.$field->art_thumb)}}" alt="" width="200" height="120"></div>
-                            <input type="text" name="art_thumb" style="display: none">
+                            <input type="text" name="art_thumb" value="{{ $field->art_thumb }}" style="display: none">
                             <input type="file" name="picture" id="picture" style="max-height: 200px;max-width: 350px;">
                         </td>
                     </tr>
