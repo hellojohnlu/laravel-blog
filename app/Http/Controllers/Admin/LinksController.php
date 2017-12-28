@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Validator;
 
 class LinksController extends Controller
 {
@@ -22,24 +23,52 @@ class LinksController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.  GET->admin/links/create
+     * 添加友情链接  GET->admin/links/create
      *
      * @return \Illuminate\Http\Response
      */
     public function create()
     {
-        //
+        $data = [];
+        return view('admin.links.add',compact('data'));
     }
 
     /**
-     * Store a newly created resource in storage. POST->admin/links
+     * 添加友情链接,处理表单提交  POST->admin/links
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-        //
+        if ($request->isMethod('post')) {
+            $data = $request->except('_token'); // 接收数据
+
+            // 定义验证规则
+            $rules = [
+                'link_name'    =>  'required',
+                'link_url'    =>  'required',
+            ];
+
+            // 提示信息
+            $messages = [
+                'link_name.required'   =>  '请填写链接名称',
+                'link_url.required'    =>  '请填写 URL 地址',
+            ];
+
+            $validator = Validator::make($data, $rules, $messages);    //调用验证器
+
+            if ($validator->passes()) {
+                $res = Links::create($data);    //数据入库
+                if ($res) {
+                    return redirect('admin/jump')->with(['message'=>'添加友情链接成功！','url' =>'links', 'jumpTime'=>3,'status'=>true]);
+                }else{
+                    return back()->with('errors','添加友情链接失败，请稍后重试！');
+                }
+            }else{
+                return back()->withErrors($validator);
+            }
+        }
     }
 
     /**
@@ -95,12 +124,12 @@ class LinksController extends Controller
     public function changeOrder(Request $request)
     {
         $input = $request->all();
-        $cate = Links::find($input['link_id']);  //取数据
+        $link = Links::find($input['link_id']);  //取数据
 
         // 判断传递的值是否是数字
         if (is_numeric($input['link_order'])) {
-            $cate->link_order = $input['link_order'];   //赋值
-            $res = $cate->update();                     //更新
+            $link->link_order = $input['link_order'];   //赋值
+            $res = $link->update();                     //更新
         }else{
             $data = [
                 'status'    =>  0,
