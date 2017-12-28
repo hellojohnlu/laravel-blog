@@ -31,5 +31,8 @@ Route::group(['middleware'=>['admin.login'],'prefix'=>'admin','namespace'=>'Admi
     Route::post('cate/changeOrder','CategoryController@changeOrder');   //分类排序
 
     Route::resource('article','ArticleController');     //文章
+
+    Route::resource('links','LinksController');      //Links
+    Route::post('links/changeOrder','LinksController@changeOrder');   //友情链接排序
 });
 
