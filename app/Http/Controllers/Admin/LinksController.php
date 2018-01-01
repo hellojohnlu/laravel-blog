@@ -83,18 +83,19 @@ class LinksController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.  GET->admin/links/{links}/edit
+     * 编辑友情链接  GET->admin/links/{links}/edit
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        //
+        $field = Links::find($id);  // 获取数据
+        return view('admin.links.edit',compact('field'));
     }
 
     /**
-     * Update the specified resource in storage.  PUT->admin/links/{links}
+     * 更新友情链接  PUT->admin/links/{links}
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -102,18 +103,40 @@ class LinksController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        if ($request->isMethod('PUT')) {
+            $input = $request->except('_token','_method');  //排除_token与_method值
+
+            $res = Links::where('link_id',$id)->update($input);
+            if ($res) {
+                return redirect('admin/jump')->with(['message'=>'修改分类成功！','url' =>'links', 'jumpTime'=>3,'status'=>true]);
+            }else{
+                return back()->with('errors','修改分类失败，请稍后重试！');
+            }
+        }
     }
 
     /**
-     * Remove the specified resource from storage.  DELETE->admin/links/{links}
+     * 删除友情链接  DELETE->admin/links/{links}
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        //
+        $res = Links::where('link_id',$id)->delete();    // 删除分类
+
+        if ($res) {
+            $data = [
+                'status'    =>  1,
+                'msg'       =>  '删除友情链接成功！'
+            ];
+        }else{
+            $data = [
+                'status'    =>  0,
+                'msg'       =>  '删除友情链接失败，请重试！'
+            ];
+        }
+        return $data;
     }
 
     /**

@@ -46,8 +46,8 @@
                         <td>{{ $v->link_title }}</td>
                         <td>{{ $v->link_url }}</td>
                         <td>
-                            <a href="{{ url('admin/category/'.$v->link_id.'/edit') }}">修改</a>
-                            <a href="javascript:;" onclick="delCate({{ $v->link_id }})">删除</a>
+                            <a href="{{ url('admin/links/'.$v->link_id.'/edit') }}">修改</a>
+                            <a href="javascript:;" onclick="delLink({{ $v->link_id }})">删除</a>
                         </td>
                     </tr>
                     @endforeach
@@ -70,13 +70,13 @@
     }
 
     // 删除分类
-    function delCate(cate_id) {
+    function delLink(link_id) {
         //询问框
-        layer.confirm('您确定要删除这个分类吗？', {
+        layer.confirm('您确定要删除这条友情链接吗？', {
             btn: ['确定','取消'] //按钮
         }, function(){
             // 异步删除分类
-            $.post("{{url('admin/category/')}}/"+cate_id,{'_token':'{{csrf_token()}}','_method':'delete'},function (data) {
+            $.post("{{url('admin/links/')}}/"+link_id,{'_token':'{{csrf_token()}}','_method':'delete'},function (data) {
                 if(data.status == 1){
                     layer.msg(data.msg,{icon:6});
                     setTimeout("window.location.reload()",2000);    // 2 秒后刷新页面
@@ -89,6 +89,4 @@
         });
     }
 </script>
-
-
 @endsection

@@ -23,7 +23,7 @@
                         <p style="color: red;text-align: center">{{ $error }}</p>
                     @endforeach
                 @else
-                    <p style="color: red;text-align: center"">{{ $errors }}</p>
+                    <p style="color: red;text-align: center">{{ $errors }}</p>
                 @endif
             </div>
         @endif
