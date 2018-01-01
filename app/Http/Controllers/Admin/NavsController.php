@@ -2,39 +2,39 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Model\Links;
+use App\Http\Model\Navs;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 
-class LinksController extends Controller
+class NavsController extends Controller
 {
     /**
-     * 友情链接列表  GET->admin/links
+     * 导航菜单列表  GET->admin/Navs
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        $data = Links::orderBy('link_order','asc')->get();
-        return view('admin.links.index',compact('data'));
+        $data = Navs::orderBy('nav_order','asc')->get();
+        return view('admin.Navs.index',compact('data'));
     }
 
     /**
-     * 添加友情链接  GET->admin/links/create
+     * 添加导航菜单  GET->admin/Navs/create
      *
      * @return \Illuminate\Http\Response
      */
     public function create()
     {
         $data = [];
-        return view('admin.links.add',compact('data'));
+        return view('admin.Navs.add',compact('data'));
     }
 
     /**
-     * 添加友情链接,处理表单提交  POST->admin/links
+     * 添加导航菜单,处理表单提交  POST->admin/Navs
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -46,24 +46,24 @@ class LinksController extends Controller
 
             // 定义验证规则
             $rules = [
-                'link_name'    =>  'required',
-                'link_url'    =>  'required',
+                'nav_name'    =>  'required',
+                'nav_url'    =>  'required',
             ];
 
             // 提示信息
             $messages = [
-                'link_name.required'   =>  '请填写链接名称',
-                'link_url.required'    =>  '请填写 URL 地址',
+                'nav_name.required'   =>  '请填写导航名称',
+                'nav_url.required'    =>  '请填写 URL 地址',
             ];
 
             $validator = Validator::make($data, $rules, $messages);    //调用验证器
 
             if ($validator->passes()) {
-                $res = Links::create($data);    //数据入库
+                $res = Navs::create($data);    //数据入库
                 if ($res) {
-                    return redirect('admin/jump')->with(['message'=>'添加友情链接成功！','url' =>'links', 'jumpTime'=>3,'status'=>true]);
+                    return redirect('admin/jump')->with(['message'=>'添加导航菜单成功！','url' =>'navs', 'jumpTime'=>3,'status'=>true]);
                 }else{
-                    return back()->with('errors','添加友情链接失败，请稍后重试！');
+                    return back()->with('errors','添加导航菜单失败，请稍后重试！');
                 }
             }else{
                 return back()->withErrors($validator);
@@ -72,7 +72,7 @@ class LinksController extends Controller
     }
 
     /**
-     * Display the specified resource.  GET->admin/links/{links}
+     * Display the specified resource.  GET->admin/Navs/{Navs}
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -83,19 +83,19 @@ class LinksController extends Controller
     }
 
     /**
-     * 编辑友情链接  GET->admin/links/{links}/edit
+     * 编辑导航菜单  GET->admin/Navs/{Navs}/edit
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
     {
-        $field = Links::find($id);  // 获取数据
-        return view('admin.links.edit',compact('field'));
+        $field = Navs::find($id);  // 获取数据
+        return view('admin.Navs.edit',compact('field'));
     }
 
     /**
-     * 更新友情链接  PUT->admin/links/{links}
+     * 更新导航菜单  PUT->admin/Navs/{Navs}
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -106,34 +106,34 @@ class LinksController extends Controller
         if ($request->isMethod('PUT')) {
             $input = $request->except('_token','_method');  //排除_token与_method值
 
-            $res = Links::where('link_id',$id)->update($input);
+            $res = Navs::where('nav_id',$id)->update($input);
             if ($res) {
-                return redirect('admin/jump')->with(['message'=>'更新友情链接成功！','url' =>'links', 'jumpTime'=>3,'status'=>true]);
+                return redirect('admin/jump')->with(['message'=>'更新导航成功！','url' =>'navs', 'jumpTime'=>3,'status'=>true]);
             }else{
-                return back()->with('errors','更新友情链接失败，请稍后重试！');
+                return back()->with('errors','更新导航失败，请稍后重试！');
             }
         }
     }
 
     /**
-     * 删除友情链接  DELETE->admin/links/{links}
+     * 删除导航菜单  DELETE->admin/Navs/{Navs}
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        $res = Links::where('link_id',$id)->delete();    // 删除分类
+        $res = Navs::where('nav_id',$id)->delete();    // 删除分类
 
         if ($res) {
             $data = [
                 'status'    =>  1,
-                'msg'       =>  '删除友情链接成功！'
+                'msg'       =>  '删除导航菜单成功！'
             ];
         }else{
             $data = [
                 'status'    =>  0,
-                'msg'       =>  '删除友情链接失败，请重试！'
+                'msg'       =>  '删除导航菜单失败，请重试！'
             ];
         }
         return $data;
@@ -147,12 +147,12 @@ class LinksController extends Controller
     public function changeOrder(Request $request)
     {
         $input = $request->all();
-        $link = Links::find($input['link_id']);  //取数据
+        $nav = Navs::find($input['nav_id']);  //取数据
 
         // 判断传递的值是否是数字
-        if (is_numeric($input['link_order'])) {
-            $link->link_order = $input['link_order'];   //赋值
-            $res = $link->update();                     //更新
+        if (is_numeric($input['nav_order'])) {
+            $nav->nav_order = $input['nav_order'];   //赋值
+            $res = $nav->update();                     //更新
         }else{
             $data = [
                 'status'    =>  0,

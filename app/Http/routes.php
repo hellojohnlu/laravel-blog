@@ -32,7 +32,10 @@ Route::group(['middleware'=>['admin.login'],'prefix'=>'admin','namespace'=>'Admi
 
     Route::resource('article','ArticleController');     //文章
 
-    Route::resource('links','LinksController');      //Links
+    Route::resource('links','LinksController');      //友情链接
     Route::post('links/changeOrder','LinksController@changeOrder');   //友情链接排序
+
+    Route::resource('navs','NavsController');      //导航
+    Route::post('navs/changeOrder','NavsController@changeOrder');   //友情链接排序
 });
 
