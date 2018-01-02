@@ -39,6 +39,7 @@ Route::group(['middleware'=>['admin.login'],'prefix'=>'admin','namespace'=>'Admi
     Route::post('navs/changeOrder','NavsController@changeOrder');   //导航排序
 
     Route::resource('config','ConfigController');   //网站配置
+    Route::post('config/changeOrder','ConfigController@changeOrder');   //导航排序
 
 });
 
