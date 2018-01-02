@@ -31,7 +31,7 @@
                         <th class="tc">ID</th>
                         <th>标题</th>
                         <th>名称</th>
-                        <th></th>
+                        <th>内容</th>
                         <th>操作</th>
                     </tr>
                     @foreach($data as $v)
@@ -44,7 +44,7 @@
                             <a href="#">{{ $v->conf_title }}</a>
                         </td>
                         <td>{{ $v->conf_name }}</td>
-                        <td></td>
+                        <td>{!! $v->_html !!}</td>
                         <td>
                             <a href="{{ url('admin/config/'.$v->conf_id.'/edit') }}">修改</a>
                             <a href="javascript:;" onclick="delnav({{ $v->conf_id }})">删除</a>

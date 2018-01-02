@@ -18,7 +18,26 @@ class ConfigController extends Controller
      */
     public function index()
     {
-        $data = Config::orderBy('conf_order','asc')->get();
+        $data = Config::orderBy('conf_order','asc')->get(); //获取数据
+
+        // 内容项
+        foreach ($data as $k => $v) {
+            switch ($v->field_type) {
+                case 'input':
+                    $data[$k]->_html = '<input type="text" class="lg" name="conf_content" value="'.$v->conf_content.'">';
+                    break;
+                case 'textarea':
+                    $data[$k]->_html = '<textarea type="text" name="conf_content">'.$v->conf_content.'</textarea>';
+                    break;
+                case 'radio':
+                    if($v->field_value == 1){
+                        $data[$k]->_html = '<input type="radio" name="conf_content" value="{{ $v->field_value}}" checked>开启 &nbsp;&nbsp;&nbsp;';
+                        $data[$k]->_html .= '<input type="radio" name="conf_content" value="{{ $v->field_value}}">关闭';
+                    }
+                    break;
+            }
+        }
+
         return view('admin.config.index',compact('data'));
     }
 
@@ -108,9 +127,9 @@ class ConfigController extends Controller
 
             $res = Config::where('conf_id',$id)->update($input);
             if ($res) {
-                return redirect('admin/jump')->with(['message'=>'更新导航成功！','url' =>'config', 'jumpTime'=>3,'status'=>true]);
+                return redirect('admin/jump')->with(['message'=>'更新配置项成功！','url' =>'config', 'jumpTime'=>3,'status'=>true]);
             }else{
-                return back()->with('errors','更新导航失败，请稍后重试！');
+                return back()->with('errors','更新配置项失败，请稍后重试！');
             }
         }
     }
