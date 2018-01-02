@@ -36,6 +36,9 @@ Route::group(['middleware'=>['admin.login'],'prefix'=>'admin','namespace'=>'Admi
     Route::post('links/changeOrder','LinksController@changeOrder');   //友情链接排序
 
     Route::resource('navs','NavsController');      //导航
-    Route::post('navs/changeOrder','NavsController@changeOrder');   //友情链接排序
+    Route::post('navs/changeOrder','NavsController@changeOrder');   //导航排序
+
+    Route::resource('config','ConfigController');   //网站配置
+
 });
 
