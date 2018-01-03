@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Home;
 
 use App\Http\Model\Article;
+use App\Http\Model\Category;
 use App\Http\Model\Links;
 use App\Http\Model\Navs;
 use Illuminate\Http\Request;
@@ -31,9 +32,15 @@ class IndexController extends CommonController
         return view('home.index',compact('hotArticle','data','newArticle','randomArticle','links'));
     }
 
-    public function cate()
+    public function cate($id)
     {
-        return view('home.list');
+        //分类目录
+        $field = Category::find($id);
+
+        // 图文列表前5篇（带分页）
+        $data = Article::where('cate_id',$id)->orderBy('art_time','des')->paginate(4);
+
+        return view('home.list',compact('field','data'));
     }
 
     public function article()

@@ -2,7 +2,7 @@
 
 Route::group(['namespace'=>'Home'],function () {
     Route::get('/','IndexController@index');
-    Route::get('/cate','IndexController@cate');
+    Route::get('/cate/{id}','IndexController@cate')->where(['id'=>'[0-9]+']);
     Route::get('/article','IndexController@article');
 });
 
