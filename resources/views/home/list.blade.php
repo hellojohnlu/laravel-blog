@@ -1,22 +1,6 @@
-﻿<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>后盾个人博客</title>
-<meta name="keywords" content="个人博客,后盾个人博客,个人博客模板,后盾" />
-<meta name="description" content="后盾个人博客，是一个站在web前端设计之路的女程序员个人网站，提供个人博客模板免费资源下载的个人原创网站。" />
-<link href="{{asset('home/css/base.css')}}" rel="stylesheet">
-<link href="{{asset('home/css/style.css')}}" rel="stylesheet">
-<!--[if lt IE 9]>
-<script src="{{asset('home/js/modernizr.js')}}"></script>
-<![endif]-->
-</head>
-<body>
-<header>
-  <div id="logo"><a href="/"></a></div>
-  <nav class="topnav" id="topnav"><a href="index.blade.php"><span>首页</span><span class="en">Protal</span></a><a href="about.html"><span>关于我</span><span class="en">About</span></a><a href="newlist.html"><span>慢生活</span><span class="en">Life</span></a><a href="moodlist.html"><span>碎言碎语</span><span class="en">Doing</span></a><a href="share.html"><span>模板分享</span><span class="en">Share</span></a><a href="knowledge.html"><span>学无止境</span><span class="en">Learn</span></a><a href="book.html"><span>留言版</span><span class="en">Gustbook</span></a></nav>
-  </nav>
-</header>
+﻿@extends('home.layout')
+
+@section('content')
 <article class="blogs">
 <h1 class="t_nav"><span>“慢生活”不是懒惰，放慢速度不是拖延时间，而是让我们在生活中寻找到平衡。</span><a href="/" class="n1">网站首页</a><a href="/" class="n2">慢生活</a></h1>
 <div class="newblog left">
@@ -113,9 +97,5 @@ document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static
     <!-- Baidu Button END -->   
 </aside>
 </article>
-<footer>
-  <p>Design by 后盾网 <a href="http://www.miitbeian.gov.cn/" target="_blank">http://www.houdunwang.com</a> <a href="/">网站统计</a></p>
-</footer>
-<script src="{{asset('home/js/silder.js')}}"></script>
-</body>
-</html>
+
+@endsection
