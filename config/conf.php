@@ -1,6 +1,7 @@
 <?php return array (
-  'duonew' => 'fsadfasdfasdfas',
-  '统计代码' => '多牛网是一个很好的在线教育平台!!!!',
+  'description' => '生活、编程、读书、旅行',
+  'copyright' => 'laravel-blog.com @ 2018',
+  'myBlog' => '我的博客',
+  'keywords' => '个人博客，记录生活点滴',
   '网站状态' => '{{ $v->field_value}}',
-  'fdsafsdf' => 'dsfasdfasdfasdffsdfsd',
 );

@@ -20,7 +20,7 @@ class IndexController extends CommonController
         $data = Article::orderBy('art_time','des')->paginate(5);
 
         // 最新文章
-        $newArticle = Article::orderBy('art_view','des')->take(8)->get();
+        $newArticle = Article::orderBy('art_time','des')->take(8)->get();
 
         // 随机文章
         $randomArticle = Article::orderBy('art_id','des')->get()->random(5);
