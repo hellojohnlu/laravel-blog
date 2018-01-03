@@ -1,5 +1,11 @@
 ﻿@extends('home.layout')
 
+@section('info')
+  <title>后盾个人博客</title>
+  <meta name="keywords" content="个人博客模板,博客模板" />
+  <meta name="description" content="寻梦主题的个人博客模板，优雅、稳重、大气,低调。" />
+@endsection
+
 @section('content')
 <article class="blogs">
   <h1 class="t_nav"><span>您当前的位置：<a href="/index.html">首页</a>&nbsp;&gt;&nbsp;<a href="/news/s/">慢生活</a>&nbsp;&gt;&nbsp;<a href="/news/s/">日记</a></span><a href="/" class="n1">网站首页</a><a href="/" class="n2">日记</a></h1>
