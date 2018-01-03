@@ -127,6 +127,7 @@ class ConfigController extends Controller
 
             $res = Config::where('conf_id',$id)->update($input);
             if ($res) {
+                $this->putFile();
                 return redirect('admin/jump')->with(['message'=>'更新配置项成功！','url' =>'config', 'jumpTime'=>3,'status'=>true]);
             }else{
                 return back()->with('errors','更新配置项失败，请稍后重试！');
@@ -155,6 +156,7 @@ class ConfigController extends Controller
                 'msg'       =>  '删除网站配置项失败，请重试！'
             ];
         }
+        $this->putFile();
         return $data;
     }
 
@@ -197,8 +199,9 @@ class ConfigController extends Controller
     }
 
     /**
-     * 网站配置项内容
-     *
+     * 网站内容
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function changeContent(Request $request)
     {
@@ -208,6 +211,18 @@ class ConfigController extends Controller
                 Config::where('conf_id',$v)->update(['conf_content'=>$data['conf_content'][$k]]);
             }
         }
+        $this->putFile();
         return back()->with('errors','配置项更新成功！');
+    }
+
+    /**
+     * 生成网站配置项文件
+     */
+    public function putFile()
+    {
+        $config = Config::pluck('conf_content','conf_name')->all();
+        $path = base_path().'\config\conf.php';
+        $str = '<?php return '.var_export($config,true).';';
+        file_put_contents($path,$str);
     }
 }
