@@ -20,12 +20,6 @@ class IndexController extends CommonController
         // 图文列表前5篇（带分页）
         $data = Article::orderBy('art_time','des')->paginate(5);
 
-        // 最新文章
-        $newArticle = Article::orderBy('art_time','des')->take(8)->get();
-
-        // 随机文章
-        $randomArticle = Article::orderBy('art_id','des')->get()->random(5);
-
         // 友情链接
         $links = Links::orderBy('link_order','asc')->get();
 
@@ -37,10 +31,13 @@ class IndexController extends CommonController
         //分类目录
         $field = Category::find($id);
 
+        //查询当前分类的子分类
+        $submenu = Category::where('cate_pid',$id)->get();
+
         // 图文列表前5篇（带分页）
         $data = Article::where('cate_id',$id)->orderBy('art_time','des')->paginate(4);
 
-        return view('home.list',compact('field','data'));
+        return view('home.list',compact('field','data','submenu'));
     }
 
     public function article()

@@ -19,7 +19,26 @@
   </nav>
 </header>
 
-@yield('content')
+@section('content')
+  <h3>
+    <p>最新<span>文章</span></p>
+  </h3>
+  <ul class="rank">
+    @foreach($newArticle as $n)
+      <li><a href="{{ url('article/'.$n->art_id) }}" target="_blank">{{ $n->art_title }}</a></li>
+    @endforeach
+  </ul>
+
+  {{--随机文章--}}
+  <h3 class="ph">
+    <p>随机<span>文章</span></p>
+  </h3>
+  <ul class="paih">
+    @foreach($randomArticle as $r)
+      <li><a href="{{ url('article/'.$r->art_id) }}" target="_blank">{{ $r->art_title }}</a></li>
+    @endforeach
+  </ul>
+@show
 
 <footer>
   <p><a href="{{ url('/') }}" target="_parent">{{ Config::get('conf.copyright') }}</a> @ {{date('Y',time())}}</p>
