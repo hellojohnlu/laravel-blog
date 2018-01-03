@@ -22,7 +22,7 @@
 @yield('content')
 
 <footer>
-  <p><a href="{{ url('/') }}" target="_parent">{{ Config::get('conf.copyright') }}</a></p>
+  <p><a href="{{ url('/') }}" target="_parent">{{ Config::get('conf.copyright') }}</a> @ {{date('Y',time())}}</p>
 </footer>
 </body>
 </html>
