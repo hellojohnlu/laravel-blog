@@ -24,15 +24,15 @@ class ConfigController extends Controller
         foreach ($data as $k => $v) {
             switch ($v->field_type) {
                 case 'input':
-                    $data[$k]->_html = '<input type="text" class="lg" name="conf_content" value="'.$v->conf_content.'">';
+                    $data[$k]->_html = '<input type="text" class="lg" name="conf_content[]" value="'.$v->conf_content.'">';
                     break;
                 case 'textarea':
-                    $data[$k]->_html = '<textarea type="text" name="conf_content">'.$v->conf_content.'</textarea>';
+                    $data[$k]->_html = '<textarea type="text" name="conf_content[]">'.$v->conf_content.'</textarea>';
                     break;
                 case 'radio':
                     if($v->field_value == 1){
-                        $data[$k]->_html = '<input type="radio" name="conf_content" value="{{ $v->field_value}}" checked>开启 &nbsp;&nbsp;&nbsp;';
-                        $data[$k]->_html .= '<input type="radio" name="conf_content" value="{{ $v->field_value}}">关闭';
+                        $data[$k]->_html = '<input type="radio" name="conf_content[]" value="{{ $v->field_value}}" checked>开启 &nbsp;&nbsp;&nbsp;';
+                        $data[$k]->_html .= '<input type="radio" name="conf_content[]" value="{{ $v->field_value}}">关闭';
                     }
                     break;
             }
@@ -194,5 +194,20 @@ class ConfigController extends Controller
         }
 
         return $data;   // 返回 JSON 数据
+    }
+
+    /**
+     * 网站配置项内容
+     *
+     */
+    public function changeContent(Request $request)
+    {
+        if ($request->isMethod('POST')) {
+            $data = $request->all();    // 获取表单数据
+            foreach ($data['conf_id'] as $k => $v) {
+                Config::where('conf_id',$v)->update(['conf_content'=>$data['conf_content'][$k]]);
+            }
+        }
+        return back()->with('errors','配置项更新成功！');
     }
 }

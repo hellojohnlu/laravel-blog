@@ -38,8 +38,9 @@ Route::group(['middleware'=>['admin.login'],'prefix'=>'admin','namespace'=>'Admi
     Route::resource('navs','NavsController');      //导航
     Route::post('navs/changeOrder','NavsController@changeOrder');   //导航排序
 
-    Route::resource('config','ConfigController');   //网站配置
-    Route::post('config/changeOrder','ConfigController@changeOrder');   //导航排序
+    Route::resource('config','ConfigController');   //网站配置项
+    Route::post('config/changeOrder','ConfigController@changeOrder');   //配置项排序
+    Route::post('config/changecontent','ConfigController@changeContent');   //配置项内容
 
 });
 
