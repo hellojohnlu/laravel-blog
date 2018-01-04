@@ -26,6 +26,11 @@ class IndexController extends CommonController
         return view('home.index',compact('hotArticle','data','newArticle','randomArticle','links'));
     }
 
+    /**
+     * 分类目录
+     * @param $id
+     * @return
+     */
     public function cate($id)
     {
         //分类目录
@@ -40,8 +45,15 @@ class IndexController extends CommonController
         return view('home.list',compact('field','data','submenu'));
     }
 
-    public function article()
+    /**
+     * 文章
+     * @param $id    文章id
+     * @return
+     */
+    public function article($id)
     {
-        return view('home.new');
+        //关联查询
+        $data = Article::Join('category','article.cate_id','=','category.cate_id')->where('art_id',$id)->first();
+        return view('home.new',compact('data'));
     }
 }

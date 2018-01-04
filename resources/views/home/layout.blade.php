@@ -5,8 +5,8 @@
 @yield('info')
 <link href="{{asset('home/css/base.css')}}" rel="stylesheet">
 <link href="{{asset('home/css/index.css')}}" rel="stylesheet">
-<link href="{{asset('home/css/style.css')}}" rel="stylesheet">
-<link href="{{asset('home/css/new.css')}}" rel="stylesheet">
+  <link href="{{asset('home/css/style.css')}}" rel="stylesheet">
+  <link href="{{asset('home/css/new.css')}}" rel="stylesheet">
 <!--[if lt IE 9]>
 <script src="{{asset('home/js/modernizr.js')}}"></script>
 <![endif]-->
